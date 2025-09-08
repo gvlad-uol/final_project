@@ -135,8 +135,6 @@ def convert_tensor_to_image(tensor: torch.Tensor) -> np.ndarray:
     return image_hwc
 
 ## Advanced Image Manipulation
-### ----------------------------------------------------------------
-
 def transfer_color_profile(source_bgr: np.ndarray, target_bgr: np.ndarray) -> np.ndarray:
     """
     Transfers the color from a source image to a target image by matching luminance.
